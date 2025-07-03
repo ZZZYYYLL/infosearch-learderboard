@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+    <!-- Replace the content tag with appropriate information -->
+    <meta name="description" content="InfoSearch">
+    <meta property="og:title" content="Beyond Content Relevance: Evaluating Instruction Following in Retrieval Models
+"/>
+    <meta property="og:description" content="InfoSearch"/>
+    <meta property="og:url" content="https://zzzyyyll.github.io"/>
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+    <meta property="og:image" content="static/image/your_banner_image.png"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+
+
+    <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+    <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+    <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Keywords for your paper to be indexed by-->
+    <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>Beyond Content Relevance: Evaluating Instruction Following in Retrieval Models
+    </title>
+    <link rel="icon" type="image/x-icon" href="">
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="static/css/bulma.min.css">
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script defer src="static/js/fontawesome.all.min.js"></script>
+    <script src="static/js/bulma-carousel.min.js"></script>
+    <script src="static/js/bulma-slider.min.js"></script>
+    <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+<section class="hero">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column has-text-centered">
+                    <h1 class="title is-1 publication-title">Beyond Content Relevance: Evaluating Instruction Following
+                        in Retrieval Models
+                    </h1>
+                    <div class="is-size-5 publication-authors">
+                        <!-- Paper authors -->
+                        <span class="author-block">
+                    <a target="_blank">Jianqun Zhou</a><sup>1*</sup>,</span>
+                        <span class="author-block">
+                    <a target="_blank">Yuanlei Zheng</a><sup>4*</sup>,</span>
+                        <span class="author-block">
+                    <a target="_blank">Wei Chen</a><sup>4*</sup>,</span>
+                        <span class="author-block">
+                    <a target="_blank">Qianqian Zheng</a><sup>1</sup>,</span>
+                        <span class="author-block">
+                    <a target="_blank">Hui Su</a><sup>2</sup>,</span>
+                        <span class="author-block">
+                    <a target="_blank">Wei Zhang</a><sup>1</sup>,</span>
+                        <span class="author-block">
+                    <a target="_blank">Rui Meng</a><sup>3†</sup>,</span>
+                        <span class="author-block">
+                    <a target="_blank">Xiaoyu Shen</a><sup>1,5†</sup></span>
+                    </div>
+
+                    <div class="is-size-5 publication-authors">
+                        <span class="author-block"><small><sup>1</sup>Ningbo Key Laboratory of Spatial Intelligence and Digital Derivative, Institute of Digital Twin, Eastern Institute of Technology, Ningbo</small></span>
+                        <span class="author-block"><small><sup>2</sup>Meituan Inc.</small></span>
+                        <span class="author-block"><small><sup>3</sup>Salesforce Research</small></span>
+                        <span class="author-block"><small><sup>4</sup>School of Software Engineering, Huazhong University of Science and Technology</small></span>
+                        <span class="author-block"><small><sup>5</sup>Engineering Research Center of Chiplet Design and Manufacturing of Zhejiang Province</small></span>
+                        <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                        <span class="eql-cntrb"><small><sup>†</sup>Indicates Corresponding Author</small></span>
+                    </div>
+
+                    <div class="column has-text-centered">
+                        <div class="publication-links">
+                            <!-- Arxiv PDF link -->
+                            <span class="link-block">
+                        <a href="https://arxiv.org/pdf/2410.23841.pdf" target="_blank"
+                           class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                            <!-- Github link -->
+                            <span class="link-block">
+                    <a href="https://github.com/EIT-NLP/InfoSearch" target="_blank"
+                       class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                            <!-- ArXiv abstract Link -->
+                            <span class="link-block">
+                  <a href="https://arxiv.org/abs/2410.23841" target="_blank"
+                     class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+
+                            <!-- Dataset -->
+                            <span class="link-block">
+                  <a href="https://huggingface.co/EIT-NLP" target="_blank"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      🤗
+                    </span>
+                    <span>Dataset</span>
+                  </a>
+                </span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+    <div class="container is-max-desktop">
+        <div class="hero-body">
+            <p>
+                <img src="static/images/retrieval_modes.png" alt="Learning from model weights"
+                     class="blend-img-background center-image" style="max-width: 100%; height: auto;">
+            </p>
+            <br>
+            <p>
+                <strong><em>InfoSearch</em></strong> consists of six dimensions, each representing a document-level
+                feature with
+                values drawn from predefined conditions. Queries are paired with one dimension and evaluated in
+                three retrieval modes based on the given instructions.
+            </p>
+
+            <ul style="list-style-type: disc;">
+                <li>
+                    <strong>Original Mode</strong>: This mode serves as a baseline that evaluates the model’s basic
+                    retrieval ability to find pertinent information without any specific constraints.
+                </li>
+                <li>
+                    <strong>Instructed Mode</strong>: In this mode, the model is required to find documents that are
+                    content relevant and satisfy the condition specified in the instruction.
+                </li>
+                <li>
+                    <strong>Reversely Instructed Mode</strong>: In this mode, the model is required to find documents
+                    that are content relevant and do not satisfy the condition specified in the instruction, which tests
+                    the model’s ability to understand negation.
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Abstract</h2>
+                <div class="content has-text-justified">
+                    <p>
+                        Instruction-following capabilities in LLMs have progressed significantly, enabling more complex
+                        user interactions through detailed prompts. However, retrieval systems have not matched these
+                        advances, most of them still relies on traditional lexical and semantic matching techniques that
+                        fail to fully capture user intent. Recent efforts have introduced instruction-aware retrieval
+                        models, but these primarily focus on intrinsic content relevance, which neglects the importance
+                        of customized preferences for broader document-level attributes. This study evaluates the
+                        instruction-following capabilities of various retrieval models beyond content relevance,
+                        including LLM-based dense retrieval and reranking models. We develop InfoSearch, a novel
+                        retrieval evaluation benchmark spanning six document-level attributes: Audience, Keyword,
+                        Format, Language, Length, and Source, and introduce novel metrics -- Strict Instruction
+                        Compliance Ratio (SICR) and Weighted Instruction Sensitivity Evaluation (WISE) to accurately
+                        assess the models' responsiveness to instructions. Our findings indicate that although
+                        fine-tuning models on instruction-aware retrieval datasets and increasing model size enhance
+                        performance, most models still fall short of instruction compliance.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="hero is-small">
+    <div class="hero-body">
+        <div class="container">
+            <h2 class="title has-text-centered">🏆 InfoSearch Leaderboard 🏆</h2>
+            <div id="results-table" class="table-container">
+                <div class="scrollable-table">
+                    <table class="table is-striped is-hoverable" id="sortable-table">
+                        <thead>
+                        <tr>
+                            <th onclick="sortTable(0)">Model</th>
+                            <th onclick="sortTable(1)">Type</th>
+                            <th onclick="sortTable(2)">WISE</th>
+                            <th onclick="sortTable(3)">SICR</th>
+                            <th onclick="sortTable(4)">p-MRR</th>
+                            <th onclick="sortTable(5)">nDCG@10_ori</th>
+                            <th onclick="sortTable(6)">nDCG@10_ins</th>
+                            <th onclick="sortTable(7)">nDCG@10_rev</th>
+                        </tr>
+                        </thead>
+                        <tbody id="table-body">
+                        <!-- Data will be dynamically loaded from table_data.json -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .table-container {
+        max-width: 1000px;
+        margin: 0 auto;
+        overflow-x: auto;
+    }
+
+    .scrollable-table {
+        max-height: 800px; /* Adjust as needed */
+        overflow-y: auto;
+        border: 1px solid #ddd;
+        white-space: nowrap; /* Prevent text from wrapping */
+    }
+
+    .scrollable-table table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .title.has-text-centered {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    h5.title.has-text-centered {
+        font-size: 1.5em; /* Adjust the size as needed */
+    }
+
+    th {
+        cursor: pointer;
+    }
+
+    td, th {
+        padding: 8px 12px;
+        text-align: left;
+    }
+</style>
+
+<script>
+    async function loadTableData() {
+        const response = await fetch('static/data/table_data.json');
+        const data = await response.json();
+        const tbody = document.getElementById('table-body');
+        tbody.innerHTML = '';
+        data.sort((a, b) => b.wise - a.wise); // Sort by WISE descending by default
+        data.forEach(row => {
+            tbody.innerHTML += `
+                <tr>
+                    <td><a href="${row.model_url}" target="_blank">${row.model_name}</a></td>
+                    <td>${row.type}</td>
+                    <td>${row.wise}</td>
+                    <td>${row.sicr}</td>
+                    <td>${row.p_mrr}</td>
+                    <td>${row.ndcg_ori}</td>
+                    <td>${row.ndcg_ins}</td>
+                    <td>${row.ndcg_rev}</td>
+                </tr>`;
+        });
+    }
+
+    function sortTable(columnIndex) {
+        const table = document.getElementById("sortable-table");
+        const rows = Array.from(table.rows).slice(1);
+        const isNumericColumn = columnIndex > 1;
+        const sortedRows = rows.sort((a, b) => {
+            const aVal = isNumericColumn ? parseFloat(a.cells[columnIndex].innerText) || 0 : a.cells[columnIndex].innerText;
+            const bVal = isNumericColumn ? parseFloat(b.cells[columnIndex].innerText) || 0 : b.cells[columnIndex].innerText;
+            return aVal > bVal ? 1 : -1;
+        });
+
+        if (table.getAttribute("data-sort-order") === "asc") {
+            sortedRows.reverse();
+            table.setAttribute("data-sort-order", "desc");
+        } else {
+            table.setAttribute("data-sort-order", "asc");
+        }
+
+        const tbody = table.querySelector("tbody");
+        tbody.innerHTML = '';
+        sortedRows.forEach(row => tbody.appendChild(row));
+    }
+
+    document.addEventListener("DOMContentLoaded", loadTableData);
+</script>
+
+<section class="hero is-small">
+    <div class="container is-max-desktop content">
+        📤 <strong>Contact Us</strong> 📤  You can send the results to us via email or GitHub issues.
+
+        Here are the example JSON format for the result:
+
+        <pre><code>{
+    "model_name": "bge-Large-v1.5",
+    "type": "Dense Retrieval",
+    "ndcg_ori": 53.2,
+    "ndcg_ins": 34.9,
+    "ndcg_rev": 34.9,
+    "p_mrr": 21.3,
+    "wise": -29.5,
+    "sicr": 1.0,
+    "model_url": "https://huggingface.co/BAAI/bge-large-en-v1.5",
+    "Audience": {
+      "ndcg_ori": 48.6,
+      "ndcg_ins": 38.1,
+      "ndcg_rev": 37.6,
+      "mrr_ori": 22.9,
+      "mrr_ins": 12.9,
+      "mrr_rev": 11.9,
+      "wise": -16.8,
+      "sicr": 0.5
+    },
+    ...
+}</code></pre>
+
+    We will update the leaderboard and the paper with your results. If you have any questions, please feel free to contact us.
+    </div>
+</section>
+
+
+
+<section class="section hero is-light">
+    <div class="container is-max-desktop">
+        <h2 class="title has-text-centered">🔍 Analysis of Different Models 🔍</h2>
+        <br>
+        <h5 class="title has-text-centered">Retrieval Model Comparison - WISE Radar Chart</h5>
+        <div class="dropdown" id="retrieval-dropdown">
+            <div class="dropdown-trigger">
+                <button class="button" aria-haspopup="true" aria-controls="retrieval-menu">
+                    <span>Select Models</span>
+                    <span class="icon is-small">
+                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                </button>
+            </div>
+            <div class="dropdown-menu" id="retrieval-menu" role="menu">
+                <div class="dropdown-content" id="retrieval-list"></div>
+            </div>
+        </div>
+
+        <canvas id="retrievalRadarChart"></canvas>
+    </div>
+</section>
+
+<section class="section hero is-light">
+    <div class="container is-max-desktop">
+        <h5 class="title has-text-centered">Reranking Model Comparison - WISE Radar Chart</h5>
+        <div class="dropdown" id="reranking-dropdown">
+            <div class="dropdown-trigger">
+                <button class="button" aria-haspopup="true" aria-controls="reranking-menu">
+                    <span>Select Models</span>
+                    <span class="icon is-small">
+                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                </button>
+            </div>
+            <div class="dropdown-menu" id="reranking-menu" role="menu">
+                <div class="dropdown-content" id="reranking-list"></div>
+            </div>
+        </div>
+
+        <canvas id="rerankingRadarChart"></canvas>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    async function loadModelData() {
+        const response = await fetch('static/data/table_data.json');
+        const data = await response.json();
+
+        console.log("Loaded data:", data);
+
+        const retrievalModels = data.filter(model => model.type.toLowerCase().includes('retrieval'));
+        const rerankingModels = data.filter(model => model.type.toLowerCase().includes('reranking'));
+
+        retrievalModels.sort((a, b) => b.wise - a.wise);
+        rerankingModels.sort((a, b) => b.wise - a.wise);
+
+        populateDropdown("retrieval-list", retrievalModels, "retrievalRadarChart");
+        populateDropdown("reranking-list", rerankingModels, "rerankingRadarChart", true);
+
+        updateRadarChart("retrievalRadarChart", retrievalModels.slice(0, 5));
+        updateRadarChart("rerankingRadarChart", rerankingModels.slice(0, 5));
+    }
+
+    function populateDropdown(listId, models, chartId, isReranking = false) {
+        const modelList = document.getElementById(listId);
+        modelList.innerHTML = "";
+        models.forEach(model => {
+            const checkbox = document.createElement("input");
+            checkbox.type = "checkbox";
+            checkbox.value = model.model_name;
+            checkbox.id = model.model_name;
+            checkbox.checked = models.slice(0, 5).includes(model);
+
+            const label = document.createElement("label");
+            label.htmlFor = model.model_name;
+            label.textContent = isReranking ? `${model.model_name} (${model.type.split('-')[0].trim()})` : model.model_name;
+
+            const div = document.createElement("div");
+            div.className = "dropdown-item";
+            div.appendChild(checkbox);
+            div.appendChild(label);
+            modelList.appendChild(div);
+        });
+
+        modelList.addEventListener("change", function () {
+            const selectedModels = Array.from(modelList.querySelectorAll("input:checked"))
+                .map(input => input.value);
+            const filteredModels = models.filter(model => selectedModels.includes(model.model_name));
+            updateRadarChart(chartId, filteredModels);
+        });
+    }
+
+    function updateRadarChart(chartId, selectedModels) {
+        const ctx = document.getElementById(chartId)?.getContext('2d');
+        if (!ctx) {
+            console.error("Canvas not found for:", chartId);
+            return;
+        }
+
+        if (window[chartId] instanceof Chart) {
+            window[chartId].destroy();
+        }
+
+        const labels = ["Audience", "Keywords", "Format", "Language", "Length", "Source"];
+        const datasets = selectedModels.map(model => {
+            const dataPoints = labels.map(dim => (model[dim] && model[dim].wise) ? model[dim].wise : 0);
+            console.log("Model:", model.model_name, "Data:", dataPoints);
+            return {
+                label: model.model_name,
+                data: dataPoints,
+                fill: true,
+                borderColor: getRandomColor(),
+                backgroundColor: getRandomColor(0.2)
+            };
+        });
+
+        console.log("Final dataset for:", chartId, datasets);
+
+        window[chartId] = new Chart(ctx, {
+            type: 'radar',
+            data: {labels, datasets},
+            options: {responsive: true}
+        });
+    }
+
+    function getRandomColor(alpha = 1) {
+        return `rgba(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${alpha})`;
+    }
+
+    document.getElementById("retrieval-dropdown").addEventListener("click", function () {
+        this.classList.toggle("is-active");
+    });
+
+    document.getElementById("reranking-dropdown").addEventListener("click", function () {
+        this.classList.toggle("is-active");
+    });
+
+    document.addEventListener("DOMContentLoaded", loadModelData);
+</script>
+
+<!--BibTex citation -->
+<section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+        <h2 class="title">BibTeX</h2>
+        <pre><code>@misc{zhou2024contentrelevanceevaluatinginstruction,
+      title={Beyond Content Relevance: Evaluating Instruction Following in Retrieval Models},
+      author={Jianqun Zhou and Yuanlei Zheng and Wei Chen and Qianqian Zheng and Zeyuan Shang and Wei Zhang and Rui Meng and Xiaoyu Shen},
+      year={2024},
+      eprint={2410.23841},
+      archivePrefix={arXiv},
+      primaryClass={cs.IR},
+      url={https://arxiv.org/abs/2410.23841},
+}</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+</body>
+</html>
