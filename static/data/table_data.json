@@ -1333,5 +1333,82 @@
     "wise": -7.7,
     "sicr": 6.2,
     "p_mrr": -2.4
+  },
+  {
+    "model_name": "Qwen3-Embedding-4B",
+    "type": "Dense Retrieval",
+    "model_url": "https://huggingface.co/Qwen/Qwen3-Embedding-4B",
+    "Audience": {
+        "wise": -11.8,
+        "sicr": 1.4,
+        "ndcg_ori": 66.4,
+        "ndcg_ins": 53.8,
+        "ndcg_rev": 56.8,
+        "mrr_ori": 46.7,
+        "mrr_ins": 21.4,
+        "mrr_rev": 26.7,
+        "p_mrr": 3.5
+    },
+    "Clarity": {
+        "wise": 14.6,
+        "sicr": 22.0,
+        "ndcg_ori": 70.4,
+        "ndcg_ins": 83.3,
+        "ndcg_rev": 70.8,
+        "mrr_ori": 57.8,
+        "mrr_ins": 64.1,
+        "mrr_rev": 51.6,
+        "p_mrr": -1.6
+    },
+    "Format": {
+        "wise": -1.9,
+        "sicr": 5.0,
+        "ndcg_ori": 67.0,
+        "ndcg_ins": 51.0,
+        "ndcg_rev": 57.7,
+        "mrr_ori": 56.0,
+        "mrr_ins": 23.0,
+        "mrr_rev": 37.3,
+        "p_mrr": -1.3
+    },
+    "Language": {
+        "wise": -8.8,
+        "sicr": 1.5,
+        "ndcg_ori": 82.4,
+        "ndcg_ins": 77.9,
+        "ndcg_rev": 69.2,
+        "mrr_ori": 78.0,
+        "mrr_ins": 53.5,
+        "mrr_rev": 40.0,
+        "p_mrr": 3.7
+    },
+    "Length": {
+        "wise": -18.9,
+        "sicr": 0.7,
+        "ndcg_ori": 81.9,
+        "ndcg_ins": 65.8,
+        "ndcg_rev": 76.6,
+        "mrr_ori": 81.0,
+        "mrr_ins": 35.0,
+        "mrr_rev": 59.3,
+        "p_mrr": -7.5
+    },
+    "Source": {
+        "wise": -20.4,
+        "sicr": 3.3,
+        "ndcg_ori": 63.7,
+        "ndcg_ins": 58.2,
+        "ndcg_rev": 67.2,
+        "mrr_ori": 57.0,
+        "mrr_ins": 31.3,
+        "mrr_rev": 50.0,
+        "p_mrr": -13.4
+    },
+    "ndcg_ori": 72.0,
+    "ndcg_ins": 65.0,
+    "ndcg_rev": 66.4,
+    "wise": -7.9,
+    "sicr": 5.6,
+    "p_mrr": -2.8
   }
 ]
